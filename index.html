@@ -8,19 +8,40 @@
   <meta name="keywords" content="torno Ecatepec, balanceo de cárdanes, reparación de cárdanes, crucetas tractocamiones, refacciones torno, taller de torno Estado de México">
   <style>
     body { font-family: Arial, sans-serif; margin:0; background:#f4f4f4; }
-    header { background:#000; text-align:center; padding:0; }
+    header { text-align:center; padding:0; }
+    .header-banner {
+      background: url("img/banner.jpg") center/cover no-repeat;
+      min-height: 260px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .header-banner::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.35);
+    }
     .logo-bar {
-      background:linear-gradient(to right, #ff6600 0%, #00a651 100%);
-      padding:15px 0;
+      position: relative;
+      z-index: 1;
+      background: linear-gradient(to right, #ff6600 0%, #00a651 100%);
+      padding: 15px 0;
+      border-radius: 12px;
+      max-width: 90%;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
     }
     header img {
-      width:280px;
+      width: 240px;
+      max-width: 90%;
       filter: drop-shadow(0 4px 6px rgba(0,0,0,0.5));
     }
     header h1 {
-      color:#fff;
-      margin:10px 0;
-      font-size:1.2em;
+      color:#111;
+      margin:20px 0 30px;
+      font-size:1.8em;
     }
     nav {
       background:#333;
@@ -65,8 +86,10 @@
 </head>
 <body>
   <header>
-    <div class="logo-bar">
-      <img src="img/logo-torno-los-guichos.png" alt="Logotipo Torno Los Güichos">
+    <div class="header-banner">
+      <div class="logo-bar">
+        <img src="img/logo-torno-los-guichos.png" alt="Logotipo Torno Los Güichos">
+      </div>
     </div>
     <h1>Balanceo y Reparación de Cárdanes en Ecatepec</h1>
   </header>
