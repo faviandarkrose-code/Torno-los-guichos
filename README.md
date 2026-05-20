@@ -1,6 +1,6 @@
 # Torno Los Güichos
 
-Sitio web para Torno Los Güichos, taller de balanceo y reparación de cárdanes en Ecatepec.
+
 
 ## Archivos
 
